@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2664951246">
+    <data-source source="LOCAL" name="Data Source" product="MySQL" version="5.5.29" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )" uuid="a67af824-7dc6-436e-b906-6294fed5903c">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/scheduler_development</jdbc-url>
+      <user-name>usr_scheduler</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+      <schema-pattern>*</schema-pattern>
+      <default-dialect>MySQL</default-dialect>
+      <libraries>
+        <library>
+          <url>jar://$PROJECT_DIR$/mysql-connector-java-5.1.22-bin.jar!/</url>
+        </library>
+        <library>
+          <url>file://$PROJECT_DIR$/mysql-connector-license.txt</url>
+        </library>
+      </libraries>
+      <ssh-properties>
+        <enabled>false</enabled>
+        <proxy-host />
+        <proxy-port>22</proxy-port>
+        <user />
+        <use-password>true</use-password>
+        <password />
+        <private-key-path />
+        <passphrase />
+        <remote-host />
+        <remote-port />
+        <local-port />
+      </ssh-properties>
+    </data-source>
+  </component>
+</project>
+

@@ -1,0 +1,39 @@
+<div><%= @calendar.year%></div>
+<div>
+  <ul class="calendar_menu_months">
+    <li><%= link_to @calendar._today.months_ago(1).strftime('%m').to_i, calendar_month_path(:month => @calendar.month-1, :year => @calendar.year)%></li>
+    <li><%= link_to @calendar._today.month, calendar_month_path(:month => @calendar.month, :year => @calendar.year)%></li>
+    <li><%= link_to @calendar._today.months_since(1).strftime('%m').to_i, calendar_month_path(:month => @calendar.month+1, :year => @calendar.year)%></li>
+  </ul>
+</div>
+
+<div>
+  <ul class="display_week">
+    <% (@calendar.start_of_previous_week..@calendar.start_of_week-1).each do |date| %>
+        <li>
+          <%= date.strftime('%e')%><!-- link to new controller, new route and new view-->
+        </li>
+    <%end %>
+  </ul>
+</div>
+
+<div>
+  <ul class="display_week">
+  <% (@calendar.start_of_week..@calendar.end_of_week).each do |date| %>
+        <li class="<%= 'current_day' if date.today? %>">
+          <%= date.strftime('%e')%><!-- link to new controller, new route and new view-->
+        </li>
+  <%end %>
+  </ul>
+</div>
+
+
+<div>
+  <ul class="display_week">
+    <% (@calendar.start_of_next_week..@calendar.end_of_next_week).each do |date| %>
+        <li>
+          <%= date.strftime('%e')%><!-- link to new controller, new route and new view-->
+        </li>
+    <%end %>
+  </ul>
+</div>

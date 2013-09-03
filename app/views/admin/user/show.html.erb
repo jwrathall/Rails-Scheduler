@@ -1,0 +1,27 @@
+<div>
+  <h2>Users</h2>
+  <div>
+    <%=link_to("Add new item",:action => 'new')%>
+  </div>
+  <div><%= pluralize(@user.size, 'User')%> found</div>
+  <table>
+    <tr>
+      <th>Fullname</th>
+      <th>Username</th>
+      <th></th>
+      <th></th>
+    </tr>
+
+    <% @user.each do |user| %>
+        <tr class="<%= cycle('odd','even')%>">
+          <td><%= user.full_name%></td>
+          <td><%= user.user_name%></td>
+          <td class="actions">
+            <%= link_to('Edit', {:action => 'edit', :id => user.id})%>
+            <%= link_to 'Delete',admin_user_path(user), :confirm => 'Are you sure?', :method=>:delete %>
+
+          </td>
+        </tr>
+    <%end%>
+  </table>
+</div>
