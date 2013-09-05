@@ -1,9 +1,9 @@
-<div><%= @calendar.year%></div>
+<div><%= @calendar._year%></div>
 <div>
   <ul class="calendar_menu_months">
-    <li><%= link_to @calendar._today.months_ago(1).strftime('%m').to_i, calendar_month_path(:month => @calendar.month-1, :year => @calendar.year)%></li>
-    <li><%= link_to @calendar._today.month, calendar_month_path(:month => @calendar.month, :year => @calendar.year)%></li>
-    <li><%= link_to @calendar._today.months_since(1).strftime('%m').to_i, calendar_month_path(:month => @calendar.month+1, :year => @calendar.year)%></li>
+    <li><%= link_to @calendar._today.months_ago(1).strftime('%m').to_i, calendar_month_path(:month => @calendar._month-1, :year => @calendar._year)%></li>
+    <li><%= link_to @calendar._today.month, calendar_month_path(:month => @calendar._month, :year => @calendar._year)%></li>
+    <li><%= link_to @calendar._today.months_since(1).strftime('%m').to_i, calendar_month_path(:month => @calendar._month+1, :year => @calendar._year)%></li>
   </ul>
 </div>
 
@@ -37,3 +37,4 @@
     <%end %>
   </ul>
 </div>
+

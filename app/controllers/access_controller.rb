@@ -1,5 +1,5 @@
 class AccessController < ApplicationController
-  require 'Calendar'
+
   layout 'application'
   before_filter :confirm_login, :only => [:calendar_menu]
 
@@ -15,7 +15,9 @@ end
   end
 
   def calendar_menu
-    @calendar = Calendar.new({:day => Date.today.day, :month => Date.today.month, :year => Date.today.year})
+    @calendar = Calendar.new
+    @calendar._day = Date.today.day, @calendar._month = Date.today.month, @calendar._year =
+    @calendar._today = Date.new(Date.today.year,Date.today.month,Date.today.day)
   end
 
   def confirm_login
@@ -23,10 +25,9 @@ end
   end
 
   def new_month
-    @month = params[:month].to_i
-    @year= params[:year].to_i
-    @day = Date.today.day
-    @calendar = Calendar.new({:day => @day, :month => @month, :year => @year})
+    @calendar = Calendar.new
+    @calendar._day = Date.today._day, @calendar._month = params[:month].to_i,@calendar._year = params[:year].to_i
+    @calendar._today = Date.new(@calendar._year,@calendar._month,@calendar._day)
     render (:new_month)
   end
 end

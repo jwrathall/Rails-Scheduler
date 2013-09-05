@@ -1,4 +1,4 @@
-class Calendar
+class CalendarX
   require 'date'
   require 'time'
   attr_accessor  :year, :month, :day, :_today
