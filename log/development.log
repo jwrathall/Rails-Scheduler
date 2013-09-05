@@ -33520,3 +33520,31 @@ Served asset /admin/user.js - 304 Not Modified (0ms)
 
 Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-05 23:45:28 +0200
 Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/10?year=2013-09-05" for 127.0.0.1 at 2013-09-05 23:47:18 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013-09-05", "month"=>"10"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `_day' for Thu, 05 Sep 2013:Date):
+  app/controllers/access_controller.rb:29:in `new_month'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/calendar/8?year=2013-09-05" for 127.0.0.1 at 2013-09-05 23:47:28 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013-09-05", "month"=>"8"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `_day' for Thu, 05 Sep 2013:Date):
+  app/controllers/access_controller.rb:29:in `new_month'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
