@@ -15,8 +15,7 @@ end
   end
 
   def calendar_menu
-    @calendar = Calendar.new
-    @calendar._day = Date.today.day, @calendar._month = Date.today.month, @calendar._year =
+    @calendar = Calendar.new(:_day => Date.today.day, :_month => Date.today.month, :_year => Date.today.year)
     @calendar._today = Date.new(Date.today.year,Date.today.month,Date.today.day)
   end
 
@@ -25,9 +24,8 @@ end
   end
 
   def new_month
-    @calendar = Calendar.new
-    @calendar._day = Date.today._day, @calendar._month = params[:month].to_i,@calendar._year = params[:year].to_i
-    @calendar._today = Date.new(@calendar._year,@calendar._month,@calendar._day)
-    render (:new_month)
+    @calendar = Calendar.new(:_day => Date.today.day, :_month => params[:month].to_i, :_year => params[:year].to_i)
+    @calendar._today = Date.new(params[:year].to_i,params[:month].to_i,Date.today.day)
+    #render (:new_month)
   end
 end

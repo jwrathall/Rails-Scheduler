@@ -33548,3 +33548,1859 @@ NoMethodError (undefined method `_day' for Thu, 05 Sep 2013:Date):
   Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
   Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
   Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 10:55:34 +0200
+Connecting to database specified by database.yml
+Processing by AccessController#calendar_menu as HTML
+Completed 500 Internal Server Error in 89ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: _day, _month, _year):
+  app/controllers/access_controller.rb:20:in `new'
+  app/controllers/access_controller.rb:20:in `calendar_menu'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 10:55:35 +0200
+Processing by AccessController#calendar_menu as HTML
+Completed 500 Internal Server Error in 0ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: _day, _month, _year):
+  app/controllers/access_controller.rb:20:in `new'
+  app/controllers/access_controller.rb:20:in `calendar_menu'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 10:58:52 +0200
+Connecting to database specified by database.yml
+Processing by AccessController#calendar_menu as HTML
+Completed 500 Internal Server Error in 21ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: _day):
+  app/controllers/access_controller.rb:20:in `new'
+  app/controllers/access_controller.rb:20:in `calendar_menu'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 11:01:26 +0200
+Processing by AccessController#calendar_menu as HTML
+Completed 500 Internal Server Error in 10ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: _day):
+  app/controllers/access_controller.rb:20:in `new'
+  app/controllers/access_controller.rb:20:in `calendar_menu'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 11:05:01 +0200
+Connecting to database specified by database.yml
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (27.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered access/_user_snapshot.html.erb (75.2ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (133.9ms)
+Completed 200 OK in 523ms (Views: 470.9ms | ActiveRecord: 34.2ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (1.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered access/_user_snapshot.html.erb (1.2ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /access.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /admin/user.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /user.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /access.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /user.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /admin/user.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:05:02 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/10?year=2013" for 127.0.0.1 at 2013-09-09 11:23:35 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"10"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `_day' for Mon, 09 Sep 2013:Date):
+  app/controllers/access_controller.rb:31:in `new_month'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Connecting to database specified by database.yml
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (2.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered access/_user_snapshot.html.erb (42.2ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (48.5ms)
+Completed 200 OK in 158ms (Views: 69.0ms | ActiveRecord: 55.8ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Served asset /access.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Served asset /admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Served asset /admin/user.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Served asset /access.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Served asset /admin/user.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:26 +0200
+Served asset /user.js - 304 Not Modified (1ms)
+
+
+Started GET "/calendar/10?year=2013" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"10"}
+  Rendered access/_calendar.html.erb (1.6ms)
+  Rendered access/new_month.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:28 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/9?year=2013" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"9"}
+  Rendered access/_calendar.html.erb (1.0ms)
+  Rendered access/new_month.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:31:48 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (1.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered access/_user_snapshot.html.erb (11.4ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 29ms (Views: 17.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:33:40 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Connecting to database specified by database.yml
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered access/_user_snapshot.html.erb (12.1ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 99ms (Views: 62.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Served asset /access.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Served asset /admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Served asset /admin/user.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Served asset /access.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Served asset /admin/user.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:36:28 +0200
+Served asset /user.js - 304 Not Modified (1ms)
+
+
+Started GET "/calendar/10?year=2013" for 127.0.0.1 at 2013-09-09 11:36:30 +0200
+
+ActionController::RoutingError (No route matches [GET] "/calendar/10"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/calendar/10?year=2013" for 127.0.0.1 at 2013-09-09 11:39:59 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"10"}
+  Rendered access/_calendar.html.erb (1.1ms)
+  Rendered access/new_month.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 7.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:00 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:00 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:00 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:00 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:00 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:00 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:00 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:00 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:00 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:00 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:00 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/9?year=2013" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"9"}
+  Rendered access/_calendar.html.erb (1.4ms)
+  Rendered access/new_month.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:02 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/10?year=2013" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"10"}
+  Rendered access/_calendar.html.erb (1.1ms)
+  Rendered access/new_month.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:04 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/11?year=2013" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"11"}
+  Rendered access/_calendar.html.erb (1.2ms)
+  Rendered access/new_month.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:05 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/12?year=2013" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"12"}
+  Rendered access/_calendar.html.erb (1.2ms)
+  Rendered access/new_month.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:07 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/11?year=2013" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"11"}
+  Rendered access/_calendar.html.erb (1.1ms)
+  Rendered access/new_month.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/10?year=2013" for 127.0.0.1 at 2013-09-09 11:40:11 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"10"}
+  Rendered access/_calendar.html.erb (1.1ms)
+  Rendered access/new_month.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:12 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:12 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:12 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:12 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:12 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:12 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:12 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:12 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:12 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:12 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:12 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/9?year=2013" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"9"}
+  Rendered access/_calendar.html.erb (1.3ms)
+  Rendered access/new_month.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:14 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/9?year=2013" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"9"}
+  Rendered access/_calendar.html.erb (1.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered access/_user_snapshot.html.erb (13.1ms)
+  Rendered access/new_month.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 11:40:47 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/9?year=2013" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"year"=>"2013", "month"=>"9"}
+  Rendered access/_calendar.html.erb (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered access/_user_snapshot.html.erb (11.5ms)
+  Rendered access/new_month.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 30ms (Views: 17.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:29 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (1.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered access/_user_snapshot.html.erb (0.9ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 13:42:39 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (34.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20130605214827)
+Migrating to CreateCalendars (20130905194956)
+Migrating to CreateAppointments (20130909115626)
+  [1m[35m (112.2ms)[0m  CREATE TABLE `appointments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `Date` date, `start_time` time, `end_time` time, `is_all_day` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (315.9ms)[0m  [1mCREATE INDEX `index_appointments_on_user_id` ON `appointments` (`user_id`)[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130909115626')
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20130605214827)
+Migrating to CreateCalendars (20130905194956)
+Migrating to CreateAppointments (20130909115626)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to CreateAppointments (20130909115626)
+  [1m[36m (127.7ms)[0m  [1mDROP INDEX `index_appointments_on_user_id` ON `appointments`[0m
+  [1m[35m (0.9ms)[0m  DROP TABLE `appointments`
+  [1m[36m (0.5ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20130909115626'[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (1.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20130605214827)
+Migrating to CreateCalendars (20130905194956)
+Migrating to CreateAppointments (20130909115626)
+  [1m[35m (134.1ms)[0m  CREATE TABLE `appointments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` date, `start_time` time, `end_time` time, `is_all_day` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (266.2ms)[0m  [1mCREATE INDEX `index_appointments_on_user_id` ON `appointments` (`user_id`)[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130909115626')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to CreateAppointments (20130909115626)
+  [1m[36m (146.2ms)[0m  [1mDROP INDEX `index_appointments_on_user_id` ON `appointments`[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE `appointments`
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20130909115626'[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20130605214827)
+Migrating to CreateCalendars (20130905194956)
+Migrating to CreateAppointments (20130909122906)
+  [1m[35m (146.8ms)[0m  CREATE TABLE `appointments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` date, `start_time` time, `end_time` time, `is_all_day` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (336.4ms)[0m  [1mCREATE INDEX `index_appointments_on_user_id` ON `appointments` (`user_id`)[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130909122906')
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `appointments`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `appointments` (`created_at`, `date`, `end_time`, `is_all_day`, `start_time`, `updated_at`, `user_id`) VALUES ('2013-09-09 12:33:47', '2013-09-09', '2013-09-09 12:33:48', 0, '2013-09-09 12:33:47', '2013-09-09 12:33:47', 1)
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 14:50:31 +0200
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (2.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered access/_user_snapshot.html.erb (13.2ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (17.0ms)
+Compiled appointments.css  (1ms)  (pid 901)
+Compiled scaffolds.css  (8ms)  (pid 901)
+Compiled application.css  (51ms)  (pid 901)
+Compiled appointments.js  (479ms)  (pid 901)
+Compiled application.js  (491ms)  (pid 901)
+Completed 200 OK in 713ms (Views: 685.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (2.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered access/_user_snapshot.html.erb (1.3ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /appointments.css - 200 OK (2ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /appointments.js - 200 OK (1ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:32 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (1.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered access/_user_snapshot.html.erb (0.7ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:41 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar/appointment" for 127.0.0.1 at 2013-09-09 14:53:15 +0200
+
+ArgumentError (missing :action):
+  config/routes.rb:13:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/calendar/appointment" for 127.0.0.1 at 2013-09-09 14:53:37 +0200
+Processing by AccessController#new_month as HTML
+  Parameters: {"month"=>"appointment"}
+Completed 500 Internal Server Error in 22ms
+
+ArgumentError (invalid date):
+  app/controllers/access_controller.rb:28:in `new'
+  app/controllers/access_controller.rb:28:in `new_month'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (2.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered access/_user_snapshot.html.erb (15.5ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:53:48 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 14:54:47 +0200
+Connecting to database specified by database.yml
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered access/_user_snapshot.html.erb (29.1ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 170ms (Views: 72.2ms | ActiveRecord: 63.6ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /access.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /appointments.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /admin/user.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /user.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /access.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /admin/user.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /appointments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:54:48 +0200
+Served asset /user.js - 304 Not Modified (1ms)
+
+
+Started GET "/appointment" for 127.0.0.1 at 2013-09-09 14:54:52 +0200
+
+ActionController::RoutingError (uninitialized constant AppointmentController):
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__2343828444788760957__call__1337578509000509455__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/appointment" for 127.0.0.1 at 2013-09-09 14:55:07 +0200
+
+ActionController::RoutingError (uninitialized constant AppointmentController):
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__2343828444788760957__call__1337578509000509455__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (2.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered access/_user_snapshot.html.erb (13.4ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 33ms (Views: 20.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:56:33 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/appointment" for 127.0.0.1 at 2013-09-09 14:56:39 +0200
+
+ActionController::RoutingError (uninitialized constant AppointmentController):
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__2343828444788760957__call__1337578509000509455__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 14:57:31 +0200
+
+ArgumentError (missing :action):
+  config/routes.rb:13:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Processing by AccessController#calendar_menu as HTML
+  Rendered access/_calendar.html.erb (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered access/_user_snapshot.html.erb (13.3ms)
+  Rendered access/calendar_menu.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 44ms (Views: 32.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/topcoat/mobile-light.css?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /topcoat/mobile-light.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /access.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /admin/user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /access.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /admin/user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-09-09 14:58:44 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/appointment" for 127.0.0.1 at 2013-09-09 14:58:47 +0200
+
+ActionController::RoutingError (uninitialized constant AppointmentController):
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__2343828444788760957__call__1337578509000509455__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jeffwrathall/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/appointment" for 127.0.0.1 at 2013-09-09 14:59:39 +0200
+Processing by AppointmentsController#show as HTML
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Appointment without an ID):
+  app/controllers/appointments_controller.rb:19:in `show'
+
+
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jeffwrathall/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.6ms)
+Connecting to database specified by database.yml

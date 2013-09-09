@@ -22,6 +22,7 @@
   <% (@calendar.start_of_week..@calendar.end_of_week).each do |date| %>
         <li class="<%= 'current_day' if date.today? %>">
           <%= date.strftime('%e')%><!-- link to new controller, new route and new view-->
+          <%= link_to date.strftime('%e'), appointment_path()%>
         </li>
   <%end %>
   </ul>

@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130905194956) do
+ActiveRecord::Schema.define(:version => 20130909122906) do
+
+  create_table "appointments", :force => true do |t|
+    t.integer  "user_id"
+    t.date     "date"
+    t.time     "start_time"
+    t.time     "end_time"
+    t.boolean  "is_all_day"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "appointments", ["user_id"], :name => "index_appointments_on_user_id"
 
   create_table "calendars", :force => true do |t|
     t.datetime "created_at", :null => false

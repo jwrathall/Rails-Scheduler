@@ -1,11 +1,16 @@
 DevSchedulerCom::Application.routes.draw do
 
+  resources :appointments
+
+
   #http://strugglingwithruby.blogspot.de/2009/12/using-sub-directories-in-rails-projects.html
  #http://stackoverflow.com/questions/7583898/grouping-controller-in-subdirectories-for-nested-resources
   root :controller => 'access', :action => :index
   match '/calendar' => 'access#calendar_menu', :via => :get, :as => 'calendar_menu'
   match '/calendar' => 'access#login_attempt', :via => :post
   match '/calendar/:month' => 'access#new_month', :as => 'calendar_month'
+
+  match '/appointment' => 'appointments',:action => :show, :via => :get, :as => 'appointment'
 
 
   #root :to => "app#index"

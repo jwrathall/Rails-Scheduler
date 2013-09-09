@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 
+  user_id: 1
+  date: 2013-09-09
+  start_time: 2013-09-09 14:29:06
+  end_time: 2013-09-09 14:29:06
+  is_all_day: false
+
+two:
+  user: 
+  user_id: 1
+  date: 2013-09-09
+  start_time: 2013-09-09 14:29:06
+  end_time: 2013-09-09 14:29:06
+  is_all_day: false

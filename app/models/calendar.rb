@@ -1,9 +1,11 @@
 class Calendar < ActiveRecord::Base
+  attr_accessor :_year, :_month, :_day, :_today
+  attr_accessible  :_year, :_month, :_day, :_today
+  #need both for public variables???
   has_many :users
-  # attr_accessible :title, :body
   require 'date'
   require 'time'
-  attr_accessor  :_year, :_month, :_day, :_today
+
 
   def days_in_month
    get_days_in_months(_year, _month)
@@ -25,6 +27,9 @@ class Calendar < ActiveRecord::Base
   end
   def end_of_next_week
     (_today + 7).end_of_week(:sunday)
+  end
+  def today
+    _today
   end
   def get_users
     User.all
