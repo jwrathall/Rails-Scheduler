@@ -1,13 +1,20 @@
+html{height:100%;}
 body {
-  background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+
+  font-family: source-sans-pro, sans-serif;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+
+  font-size: 0.875rem;
+  font-weight: 200;
+  line-height: 1.688rem;
+  color:white;
+  min-width: 100%;
+  background-color: none;
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+
   font-size: 13px;
   line-height: 18px;
 }

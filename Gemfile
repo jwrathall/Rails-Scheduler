@@ -28,7 +28,7 @@ gem 'topcoat-rails', '~> 0.1.5'
 gem 'bootstrap-sass', '~> 2.3.2.0'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0', :require => 'bcrypt'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

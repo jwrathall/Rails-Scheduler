@@ -4,10 +4,14 @@
 
 .calendar_menu_months li, .display_week li{
   display:inline;
-  width:20px;
   margin:0px auto;
 }
 .display_week{
+  li a{
+    display:inline-block;
+    min-width:20px;
+  }
+
   .current_day{
     font-size: 1.2em;
     width:20px;
