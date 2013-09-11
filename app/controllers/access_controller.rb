@@ -8,7 +8,15 @@ class AccessController < ApplicationController
   end
 
   def login_attempt
-   redirect_to action: 'calendar_menu'
+    user = User.authenticate(params[:username],params[:password])
+
+    if user
+      session[:user_id] = user.id
+      redirect_to action: 'calendar_menu'
+    else
+      redirect_to action: 'index'
+    end
+
 end
 
   def logout
@@ -17,10 +25,6 @@ end
   def calendar_menu
     @calendar = Calendar.new(:_day => Date.today.day, :_month => Date.today.month, :_year => Date.today.year)
     @calendar._today = Date.new(Date.today.year,Date.today.month,Date.today.day)
-  end
-
-  def confirm_login
-
   end
 
   def new_month

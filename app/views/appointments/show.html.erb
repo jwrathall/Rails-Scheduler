@@ -1,33 +1,35 @@
+<!-- this breaks cause I am passing a collection back and not a single instance-->
+
 <p id="notice"><%= notice %></p>
 
 <p>
   <b>User:</b>
-  <%= @appointment.user %>
+  @appointment.user
 </p>
 
 <p>
   <b>User:</b>
-  <%= @appointment.user_id %>
+  <%=@appointment.user_id%>
 </p>
 
 <p>
   <b>Date:</b>
-  <%= @appointment.date %>
+  @appointment.date.to_s
 </p>
 
 <p>
   <b>Start time:</b>
-  <%= @appointment.start_time %>
+  @appointment.start_time
 </p>
 
 <p>
   <b>End time:</b>
-  <%= @appointment.end_time %>
+  @appointment.end_time
 </p>
 
 <p>
   <b>Is all day:</b>
-  <%= @appointment.is_all_day %>
+  @appointment.is_all_day
 </p>
 
 

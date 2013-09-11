@@ -10,18 +10,19 @@ class AppointmentsController < ApplicationController
       format.json { render json: @appointments }
     end
 =end
-    show(day)
   end
 
   # GET /appointments/1
   # GET /appointments/1.json
-  def show(day)
-    @appointment = Appointment.find(params[:id])
+  def show
+    @appointment = Appointment.find_all_by_date(params[:date])
+=begin
 
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @appointment }
     end
+=end
   end
 
   # GET /appointments/new

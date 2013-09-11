@@ -32,7 +32,7 @@
   <ul class="display_week">
     <% (@calendar.start_of_next_week..@calendar.end_of_next_week).each do |date| %>
         <li>
-          <%= link_to date.strftime('%e'), appointment_path()%>
+          <%= link_to date.strftime('%e'), appointment_path(:date => date)%>
         </li>
     <%end %>
   </ul>
