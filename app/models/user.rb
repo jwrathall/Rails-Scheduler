@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   has_many :appointments
 
   attr_accessible :email, :first_name, :last_name, :password, :user_name
-  attr_accessor :password
+  attr_accessor :password, :today
 
   before_save :encrypt_password
 
@@ -27,5 +27,8 @@ class User < ActiveRecord::Base
       self.password_salt = BCrypt::Engine.generate_salt
       self.password_hash = BCrypt::Engine.hash_secret(password,password_salt)
     end
+  end
+  def get_appointments_for_today
+    @appointments = self.appointments.where(:date => self.today)
   end
 end

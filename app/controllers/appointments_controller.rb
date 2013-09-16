@@ -2,6 +2,23 @@ class AppointmentsController < ApplicationController
   # GET /appointments
   # GET /appointments.json
   def index
+    # Get the Users
+    # the entire booking is based on the instructors (*users)
+    user = User.all
+    @view_model = UserAppointments.new(user,
+                                       BusinessHours
+                                        .new(APP_CONFIG['opening'],
+                                             APP_CONFIG['closing']
+                                        )
+                                      )
+
+
+=begin
+    while timeupto > timetogoback do
+      timetogoback += 1.hour
+      print "#{timetogoback}\n"
+    end
+=end
 =begin
     @appointments = Appointment.all
 

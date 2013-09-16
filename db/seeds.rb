@@ -17,8 +17,8 @@
 #     password: 'tobesalted',
 #)
 
-
 =begin
+
 Appointment.delete_all
 
 Appointment.create(
@@ -29,3 +29,11 @@ Appointment.create(
     is_all_day:false
 )
 =end
+
+Appointment.create(
+    user_id:1,
+    date:Date.today,
+    start_time:Time.now,
+    end_time:Time.now+1,
+    is_all_day:false
+)

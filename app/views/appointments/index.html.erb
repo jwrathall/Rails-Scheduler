@@ -13,21 +13,30 @@
     <th></th>
   </tr>
 
-<% @appointments.each do |appointment| %>
+<% @view_model.user.each do |user| %>
   <tr>
-    <td><%= appointment.user %></td>
-    <td><%= appointment.user_id %></td>
-    <td><%= appointment.date %></td>
-    <td><%= appointment.start_time %></td>
-    <td><%= appointment.end_time %></td>
-    <td><%= appointment.is_all_day %></td>
-    <td><%= link_to 'Show', appointment %></td>
-    <td><%= link_to 'Edit', edit_appointment_path(appointment) %></td>
-    <td><%= link_to 'Destroy', appointment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= user.full_name%></td>
   </tr>
+  <tr>
+    <%user.appointments.each do |appointment|%>
+    <td><%=appointment.start_time.to_time.strftime('%H:%M')%></td>
+    <td><%=appointment.end_time.to_time.strftime('%H:%M')%></td>
+  </tr>
+  <%end%>
 <% end %>
 </table>
-
 <br />
+<%= @view_model.hours.opening.to_time%>
+<table>
+  <%while @view_model.hours.opening > @view_model.hours.closing do
+      @view_model.hours.opening += 1.hour%>
+         <tr>
+           <td>a</td>
+         </tr>
+  <%end%>
+  <tr>
 
+  </tr>
+</table>
 <%= link_to 'New Appointment', new_appointment_path %>
+
