@@ -1,14 +1,19 @@
 class BusinessHours
-     #require 'Time'
+     require 'Time'
      require 'Date'
   #https://gist.github.com/ryanb/456307
 
   attr_accessor :opening, :closing
 
   def initialize(opening, closing)
-    #errors cause we are passing strings and not integers
-    self.closing = DateTime.new('2012, 8, 29, 22, 35, 0')
-    self.opening = DateTime.new('2012, 8, 29, 22, 35, 0')
     #@schedule = { :default => [opening, closing] }
+    self.closing = Time.new(2012, 1, 1, closing.to_i, 0, 0)
+    self.opening = Time.new(2012, 1, 1, opening.to_i, 0, 0)
+  end
+  def store_open
+    self.opening.to_time.strftime('%H')
+  end
+  def store_close
+    self.closing.to_time.strftime('%H')
   end
 end

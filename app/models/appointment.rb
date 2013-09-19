@@ -7,4 +7,7 @@ class Appointment < ActiveRecord::Base
   attr_accessor :closing, :opening
 
   #write method to return array of arrays for user/appointment
+
+  ##try using a scope
+  scope :today, lambda{|date| where('date = ?', date)}
 end

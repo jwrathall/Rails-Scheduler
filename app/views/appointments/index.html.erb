@@ -1,42 +1,19 @@
 <h1>Listing appointments</h1>
 
-<table>
-  <tr>
-    <th>User</th>
-    <th>User</th>
-    <th>Date</th>
-    <th>Start time</th>
-    <th>End time</th>
-    <th>Is all day</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
-<% @view_model.user.each do |user| %>
-  <tr>
-    <td><%= user.full_name%></td>
-  </tr>
-  <tr>
-    <%user.appointments.each do |appointment|%>
-    <td><%=appointment.start_time.to_time.strftime('%H:%M')%></td>
-    <td><%=appointment.end_time.to_time.strftime('%H:%M')%></td>
-  </tr>
-  <%end%>
-<% end %>
-</table>
-<br />
-<%= @view_model.hours.opening.to_time%>
-<table>
-  <%while @view_model.hours.opening > @view_model.hours.closing do
-      @view_model.hours.opening += 1.hour%>
-         <tr>
-           <td>a</td>
-         </tr>
-  <%end%>
-  <tr>
+http://lanyrd.com/2013/railsisrael/schedule/?day=oct-09&view=grid
 
-  </tr>
-</table>
-<%= link_to 'New Appointment', new_appointment_path %>
+<div style="width:100%">
+  <div class="grid-header">
+    <ol>
+      <%open = 7%>
+      <%close = 20%>
+      <%while open-1 < close do%>
+          <%open += 1%>
+          <li><%=open%></li>
+      <%end%>
+    </ol>
+  </div>
 
+
+</div>

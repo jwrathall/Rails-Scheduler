@@ -4,13 +4,16 @@ class AppointmentsController < ApplicationController
   def index
     # Get the Users
     # the entire booking is based on the instructors (*users)
-    user = User.all
+    @user = User.all
+=begin
     @view_model = UserAppointments.new(user,
                                        BusinessHours
                                         .new(APP_CONFIG['opening'],
                                              APP_CONFIG['closing']
-                                        )
+                                        ),
+                                       params['date']
                                       )
+=end
 
 
 =begin
