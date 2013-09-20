@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   require 'bcrypt'
 
-  has_many :appointments
+  has_many :appointments, :inverse_of => :user
 
   attr_accessible :email, :first_name, :last_name, :password, :user_name
   attr_accessor :password, :today

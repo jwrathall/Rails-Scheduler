@@ -4,7 +4,7 @@ class AppointmentsController < ApplicationController
   def index
     # Get the Users
     # the entire booking is based on the instructors (*users)
-    @user = User.all
+    @users = User.all
 =begin
     @view_model = UserAppointments.new(user,
                                        BusinessHours

@@ -3,17 +3,44 @@
 
 http://lanyrd.com/2013/railsisrael/schedule/?day=oct-09&view=grid
 
-<div style="width:100%">
-  <div class="grid-header">
-    <ol>
-      <%open = 7%>
-      <%close = 20%>
-      <%while open-1 < close do%>
-          <%open += 1%>
-          <li><%=open%></li>
-      <%end%>
-    </ol>
+<div style="width:100%;height:100%;">
+  <div class="grid-event-header">
+    <div style="float:left;width:25%;"></div>
+    <div style="float:right;width:75%;">
+        <ol>
+          <%open = 7%>
+          <%close = 20%>
+          <%while open < close+1 do%>
+              <li class="event-item-header"><div class="event-header"><%=open%></div></li>
+              <%open += 1%>
+          <%end%>
+        </ol>
+    </div>
   </div>
-
-
+  <%@users.each do |user|%>
+  <div class="grid-events-container">
+    <div style="float:left;width:25%;"><%=user.full_name%></div>
+    <div style="float:right;width:75%;">
+      <ol>
+        <%open = 7%>
+        <%while open < close+1 do%>
+            <%appointment_start_time = 0%>
+            <%user.appointments.today('2013-09-18').each do |appointment|%>
+                <%if appointment.start_time.strftime('%H').to_i == open%>
+                    <%appointment_start_time = appointment.start_time.strftime('%H').to_i%>
+                <%end%>
+            <%end%>
+            <%if appointment_start_time != 0%>
+                <li class="event-item"><div class="event-booked"><a href="#"><%=appointment_start_time%></a></div></li>
+            <%else%>
+            <li class="event-item"><div class="event"> </div></li>
+            <%end%>
+            <%open += 1%>
+        <%end%>
+      </ol>
+    </div>
+  </div>
+  <%end%>
 </div>
+
+

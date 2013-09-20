@@ -2,4 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.grid-header li{display:inline;}
+.grid-event-header li{display:inline-block; list-style: none;}
+.event-item-header{
+  .event-header{height:25px;width:25px;}
+}
+.grid-events-container li{
+  display:inline-block;
+}
+.event-item{
+  .event, .event-booked{height:25px;width:25px;}
+  .event-booked{border:solid 1px greenyellow;}
+}
+
