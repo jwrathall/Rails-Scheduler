@@ -11,9 +11,9 @@ class BusinessHours
     self.opening = Time.new(2012, 1, 1, opening.to_i, 0, 0)
   end
   def store_open
-    self.opening.to_time.strftime('%H')
+    self.opening
   end
   def store_close
-    self.closing.to_time.strftime('%H')
+    self.closing
   end
 end

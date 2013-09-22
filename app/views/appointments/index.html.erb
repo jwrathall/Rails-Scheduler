@@ -3,10 +3,35 @@
 
 http://lanyrd.com/2013/railsisrael/schedule/?day=oct-09&view=grid
 
+
+<div>
+  <ol>
+    <%half_past = 1%>
+  <%(@business_hours.store_open.to_i..@business_hours.store_close.to_i).step(30.minutes).each do |hour|%>
+      <%if half_past%2 != 0%>
+            <li> <%=Time.at(hour).strftime('%H:%M')%></li>
+            <%half_past = 2%>
+      <%else%>
+            <li>&nbsp;</li>
+            <%half_past = 1%>
+      <%end%>
+
+  <%end%>
+  </ol>
+</div>
+
+
+
 <div style="width:100%;height:100%;">
+  <div class="grid-date">
+    <div style="float:left;width:10%;"></div>
+    <div style="float:right;width:90%;" class="grid-date-header">
+     <%= @current_date.strftime('%A')%>
+    </div>
+  </div>
   <div class="grid-event-header">
-    <div style="float:left;width:25%;"></div>
-    <div style="float:right;width:75%;">
+    <div style="float:left;width:10%;"></div>
+    <div style="float:right;width:90%;">
         <ol>
           <%open = 7%>
           <%close = 20%>
@@ -19,8 +44,8 @@ http://lanyrd.com/2013/railsisrael/schedule/?day=oct-09&view=grid
   </div>
   <%@users.each do |user|%>
   <div class="grid-events-container">
-    <div style="float:left;width:25%;"><%=user.full_name%></div>
-    <div style="float:right;width:75%;">
+    <div style="float:left;width:10%;"><%=user.full_name%></div>
+    <div style="float:right;width:90%;">
       <ol>
         <%open = 7%>
         <%while open < close+1 do%>
@@ -30,11 +55,13 @@ http://lanyrd.com/2013/railsisrael/schedule/?day=oct-09&view=grid
                     <%appointment_start_time = appointment.start_time.strftime('%H').to_i%>
                 <%end%>
             <%end%>
-            <%if appointment_start_time != 0%>
-                <li class="event-item"><div class="event-booked"><a href="#"><%=appointment_start_time%></a></div></li>
-            <%else%>
-            <li class="event-item"><div class="event"> </div></li>
-            <%end%>
+            <li class="event-item">
+                    <%if appointment_start_time != 0%>
+                        <div class="event-booked"><%=appointment_start_time%></div>
+                    <%else%>
+                    <div class="event">&nbsp;</div>
+                    <%end%>
+            </li>
             <%open += 1%>
         <%end%>
       </ol>
