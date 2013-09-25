@@ -11,7 +11,8 @@
 }
 .grid-date-header{
   height:100%;
-  background-color:#71b0e0 ;
+  background-color:#0380e8 ;
+    span{padding:6px 0 0 8px;display: block;}
 }
 .grid-event-header, .grid-events-container{
   height:65px;
@@ -24,11 +25,15 @@
 .event-item-header, .event-item{
   .event-header, .event, .event-booked{
     height:65px;
-    width:120px;
+    width:60px;
     margin:0px auto;
   }
   .event-header{
     border-right:solid 2px #71b0e0;
+    border-top:solid 1px #71b0e0;
+  }
+  .half{
+    border-right:solid 2px #0380e8;
   }
   .event{
     background-color: #595b5b;

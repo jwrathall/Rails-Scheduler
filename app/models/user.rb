@@ -1,18 +1,12 @@
 class User < ActiveRecord::Base
   require 'bcrypt'
 
-  has_many :appointments, :inverse_of => :user
+  has_many :appointments
 
   attr_accessible :email, :first_name, :last_name, :password, :user_name
-  attr_accessor :password, :today
+  attr_accessor :password
 
   before_save :encrypt_password
-
-  #http://blog.donwilson.net/2011/11/constructing-a-less-than-simple-query-with-rails-and-arel/
-
-  def self.appointments_today(t)
-    joins(:appointments).where('appointments.date' => t.to_s).first
-  end
 
   def full_name
     "#{first_name} #{last_name}"

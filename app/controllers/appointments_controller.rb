@@ -2,39 +2,12 @@ class AppointmentsController < ApplicationController
   # GET /appointments
   # GET /appointments.json
   def index
-    # Get the Users
-    # the entire booking is based on the instructors (*users)
-    @business_hours =  BusinessHours
-        .new(APP_CONFIG['opening'],
-             APP_CONFIG['closing']
-        )
-    @current_date = Date.parse(params['date'])
-    @users = User.all
-=begin
-    @view_model = UserAppointments.new(user,
-                                       BusinessHours
-                                        .new(APP_CONFIG['opening'],
-                                             APP_CONFIG['closing']
-                                        ),
-                                       params['date']
-                                      )
-=end
-
-
-=begin
-    while timeupto > timetogoback do
-      timetogoback += 1.hour
-      print "#{timetogoback}\n"
-    end
-=end
-=begin
-    @appointments = Appointment.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @appointments }
-    end
-=end
+    @presenter = AppointmentPresenter.new({
+                      :users => User.all,
+                      :business_hours => BusinessHours.new(APP_CONFIG['opening'], APP_CONFIG['closing']),
+                      :current_date => Date.parse('2013-09-18')
+                      #:current_date => Date.parse(params['date'])
+                      })
   end
 
   # GET /appointments/1
