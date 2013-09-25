@@ -7,4 +7,6 @@ So far it has custom authorization logic (very basic), a bunch of models, contro
 a place to navigate the calendar and create/edit appointments. All appointments are associated to a user. In this domain
 the user would be someone providing a service.
 
+The coolest part and the part I stressed the most about was the display of the appointment times for each user/service provider.
+
 I've got active record classes, scoped queries, custom classes and (what will be ) a pretty slick front end.
