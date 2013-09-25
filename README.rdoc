@@ -10,3 +10,5 @@ the user would be someone providing a service.
 The coolest part and the part I stressed the most about was the display of the appointment times for each user/service provider.
 
 I've got active record classes, scoped queries, custom classes and (what will be ) a pretty slick front end.
+
+Just added static classes for yaml config options.
