@@ -12,6 +12,6 @@ The coolest part and the part I stressed the most about was the display of the a
 I've got active record classes, scoped queries, custom classes and (what will be ) a pretty slick front end.
 
 ** cool things I've added (or things i needed to learn)
--static classes for yaml config options.\n
--presenter pattern (or in other languages view models)\n
--lots of time/date based functions\n
+static classes for yaml config options.
+presenter pattern (or in other languages view models)
+lots of time/date based functions
