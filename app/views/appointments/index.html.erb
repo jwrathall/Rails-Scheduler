@@ -8,7 +8,7 @@
   </div>
   <div class="grid-event-header">
     <div style="float:left;width:10%;"></div>
-    <div style="float:right;width:90%;">
+    <div style="float:right;width:90%;border-left:solid 2px #cccfcf;">
       <ol>
         <%half_past = 1%>
         <%(@presenter.store.open_integer..@presenter.store.close_integer).step(30.minutes).each do |hour|%>
@@ -35,14 +35,14 @@
                 <%step_time = 15.minutes%>
                     <%user.appointments.today(@presenter.today).each do |appointment|%>
                         <%if Time.at(myTime).strftime('%H:%M').to_str == appointment.start_time.strftime('%H:%M').to_str%>
-                            <li style="position:absolute; left:<%=left_distance.to_s%>px; width:<%=appointment.cell_width%>px;"><div style="width:100%; border:solid 1px green;"><%=appointment.start_time%></div></li>
+                            <li style="position:absolute; left:<%=left_distance.to_s%>px; width:<%=appointment.cell_width%>px;"><div class="event-booked"><%=appointment.start_time%></div></li>
                             <%left_distance += appointment.cell_width.to_i %>
                             <%do_next = false%>
                             <%step_time = appointment.duration.minute%>
                         <%end%>
                     <%end%>
                     <%if do_next%>
-                        <li style="position:absolute; left:<%=left_distance.to_s%>px; width:31px;"><div style="border-right:solid 1px red;">&nbsp;</div></li>
+                        <li style="position:absolute; left:<%=left_distance.to_s%>px; width:29px;"><div class="event-empty">&nbsp;</div></li>
                         <%left_distance += 31%>
                     <%end%>
                 <%myTime += step_time%>

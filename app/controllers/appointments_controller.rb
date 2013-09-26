@@ -4,7 +4,7 @@ class AppointmentsController < ApplicationController
   def index
     @presenter = AppointmentPresenter.new({
                       :users => User.all,
-                      :business_hours => BusinessHours.new(APP_CONFIG['opening'], APP_CONFIG['closing']),
+                      :business_hours => BusinessHours.new(Settings.open_time, Settings.close_time),
                       :current_date => Date.parse('2013-09-18')
                       #:current_date => Date.parse(params['date'])
                       })
