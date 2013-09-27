@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d114627-a194-4e79-9bb7-967c09fb0404" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/appointments.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/appointments.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.yml" afterPath="$PROJECT_DIR$/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/appointments/index.html.erb" afterPath="$PROJECT_DIR$/app/views/appointments/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/settings.rb" />
     </list>
     <ignored path="dev.scheduler.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -137,7 +133,7 @@
       <file leaf-file-name="settings.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/settings.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="71" selection-start="468" selection-end="468" vertical-scroll-proportion="0.21179402">
+            <state line="17" column="18" selection-start="468" selection-end="468" vertical-scroll-proportion="0.21179402">
               <folding />
             </state>
           </provider>
@@ -911,12 +907,12 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: models" />
-      <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: dev.scheduler.com" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="4" class="java.lang.String" itemvalue="Rails.Production: dev.scheduler.com" />
-      <item index="5" class="java.lang.String" itemvalue="Rails.Development: dev.scheduler.com" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: dev.scheduler.com" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: dev.scheduler.com" />
+      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: models" />
+      <item index="5" class="java.lang.String" itemvalue="IRB console.Rails console: dev.scheduler.com" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -1172,7 +1168,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/settings.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="71" selection-start="468" selection-end="468" vertical-scroll-proportion="0.21179402">
+        <state line="17" column="18" selection-start="468" selection-end="468" vertical-scroll-proportion="0.21179402">
           <folding />
         </state>
       </provider>
