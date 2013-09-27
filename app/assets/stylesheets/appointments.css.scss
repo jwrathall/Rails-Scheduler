@@ -1,6 +1,10 @@
 // Place all the styles related to the appointments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$cell_width: 31px;
+$cell_height: 65px;
+
  ol{
    padding:0; margin:0;
    background-color: #6a6b6b;
@@ -15,13 +19,13 @@
     span{padding:6px 0 0 8px;display: block;}
 }
 .grid-event-header, .grid-events-container{
-  height:65px;
+  height:$cell_height;
   padding: 0 0 3px 0;
   li{
     display:inline; list-style: none; float:left;
     .event-empty{
       background-color: #e3e6e6;
-      height:65px; width:100%;
+      height:$cell_height; width:100%;
       //border-right:solid 2px #cccfcf;
     }
     .event-booked{
@@ -34,11 +38,20 @@
     }
   }
 }
+.event-empty a:link, .event-empty a:visited{
+  color:none;
+  background-color:transparent;
+  height:$cell_height; width:29px;
+  display: block;
+}
+.event-empty a:hover{
+  background-color: #e0f0fa;
+}
 .grid-event-header li{background-color:#e5e9e9;}
 
 .event-item-header, .event-item{
   .event-header, .event, .event-booked{
-    height:65px;
+    height:$cell_height;
     width:60px;
     margin:0px auto;
   }
@@ -52,9 +65,7 @@
   .event{
     background-color: #595b5b;
     border: 1px solid #2e3031;
-
   }
-
 }
 
 
