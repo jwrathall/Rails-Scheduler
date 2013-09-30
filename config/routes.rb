@@ -8,9 +8,9 @@ DevSchedulerCom::Application.routes.draw do
   match '/calendar/:month' => 'access#new_month', :as => 'calendar_month'
 
   match '/appointment' => 'appointments',:action => :index, :via => :get, :as => 'appointment'
-  resources :user do
+
     resources :appointments
-  end
+
 
   #root :to => "app#index"
 

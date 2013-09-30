@@ -12,12 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :user %><br />
-    <%= f.text_field :user %>
-  </div>
-  <div class="field">
-    <%= f.label :user_id %><br />
-    <%= f.number_field :user_id %>
+    <%= f.label 'Provider' %><br />
+    <%= f.text_field :user, :value => @user.full_name, :disabled => 'disabled',:class => 'topcoat-text-input'%>
   </div>
   <div class="field">
     <%= f.label :date %><br />
@@ -25,17 +21,15 @@
   </div>
   <div class="field">
     <%= f.label :start_time %><br />
-    <%= f.time_select :start_time %>
+    <%= f.time_select :start_time, :prompt =>{:hour => @start.strftime('%H'), :minute => @start.strftime('%M') ,:minute_step => 15}  %>
   </div>
   <div class="field">
     <%= f.label :end_time %><br />
-    <%= f.time_select :end_time %>
-  </div>
-  <div class="field">
-    <%= f.label :is_all_day %><br />
-    <%= f.check_box :is_all_day %>
+    <%= f.time_select :end_time, :prompt => {:hour => (@start+1.hour).strftime('%H'), :minute => @start.strftime('%M') ,:minute_step => 15} %>
   </div>
   <div class="actions">
+    <%= f.hidden_field :user_id, :value => @user.id%>
     <%= f.submit %>
   </div>
+
 <% end %>
