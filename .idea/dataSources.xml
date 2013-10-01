@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3138959733">
+  <component name="DataSourceManagerImpl" format="xml" hash="1209595787">
     <data-source source="LOCAL" name="Data Source" product="MySQL" version="5.5.29" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )" uuid="a67af824-7dc6-436e-b906-6294fed5903c">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
       <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1:3306/scheduler_development</jdbc-url>
       <user-name>usr_scheduler</user-name>

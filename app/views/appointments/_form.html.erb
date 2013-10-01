@@ -21,11 +21,12 @@
   </div>
   <div class="field">
     <%= f.label :start_time %><br />
-    <%= f.time_select :start_time, :prompt =>{:hour => @start.strftime('%H'), :minute => @start.strftime('%M') ,:minute_step => 15}  %>
+    <%= f.time_select :start_time, :value =>{:hour => @start.strftime('%H'), :minute => @start.strftime('%M')}, :default => @start,:minute_step => 15  %>
+
   </div>
   <div class="field">
     <%= f.label :end_time %><br />
-    <%= f.time_select :end_time, :prompt => {:hour => (@start+1.hour).strftime('%H'), :minute => @start.strftime('%M') ,:minute_step => 15} %>
+    <%= f.time_select :end_time, :value => {:hour => (@start+1.hour).strftime('%H'), :minute => @start.strftime('%M')}, :default => @start+1.hour ,:minute_step => 15%>
   </div>
   <div class="actions">
     <%= f.hidden_field :user_id, :value => @user.id%>

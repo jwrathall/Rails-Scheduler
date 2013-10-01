@@ -4,6 +4,7 @@
     <extra-name-characters>#@</extra-name-characters>
     <identifier-quote-string>`</identifier-quote-string>
     <synchronize>true</synchronize>
+    <auto-commit>false</auto-commit>
     <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
     <jdbc-url>jdbc:mysql://127.0.0.1:3306/scheduler_development</jdbc-url>
     <user-name>usr_scheduler</user-name>
