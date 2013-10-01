@@ -23,14 +23,8 @@ class Appointment < ActiveRecord::Base
         31
     end
   end
-  def appointment_conflict(user_id)
-    user_id = user_id
-    #check to see if appointments ends
+  def self.collision(user_id)
+    count = Appointment.where(["user_id = ? AND start_time BETWEEN ? AND ?",user_id,'12:15','13:00']).select("COUNT(*) AS total")
+    count.first.total
   end
-  end
-  def self.latest_error_code(module_id, min, max)
-    where(
-        'error_module_id = :module_id and code between :min and :max',
-        :module_id => module_id, :min => min, :max => max
-    )
 end
