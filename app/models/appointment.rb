@@ -23,8 +23,12 @@ class Appointment < ActiveRecord::Base
         31
     end
   end
-  def self.collision(user_id)
-    count = Appointment.where(["user_id = ? AND start_time BETWEEN ? AND ?",user_id,'12:15','13:00']).select("COUNT(*) AS total")
-    count.first.total
+  def collision()
+    count = Appointment.where(["user_id = ? AND start_time BETWEEN ? AND ?",self.user_id, self.start_time.strftime('%H:%M').to_s, self.end_time.strftime('%H:%M').to_s]).select("COUNT(*) AS total")
+    if (count.first.total > 0)
+      return true
+    else
+      return false
+    end
   end
 end

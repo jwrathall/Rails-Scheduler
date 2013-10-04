@@ -23,7 +23,7 @@ class AppointmentsController < ApplicationController
     @date = params[:date]
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html {render action: 'new'}
       format.json { render json: @appointment }
     end
   end
@@ -38,14 +38,21 @@ class AppointmentsController < ApplicationController
   def create
     @appointment = Appointment.new(params[:appointment])
 
-    #error check to see if user/appointment already exits
-
     respond_to do |format|
-      if @appointment.save
-        format.html { redirect_to @appointment, notice: 'Appointment was successfully created.' }
-        format.json { render json: @appointment, status: :created, location: @appointment }
+      if !@appointment.collision
+        if @appointment.save
+          format.html { redirect_to @appointment, notice: 'Appointment was successfully created.' }
+        else
+          format.html { render action: 'new'}
+          format.json { render json: @appointment.errors, status: :unprocessable_entity }
+        end
       else
-        format.html { render action: "new" }
+        format.html { redirect_to action: 'new',
+                                  user_id: @appointment.user_id,
+                                  start_time:@appointment.start_time,
+                                  date: @appointment.date,
+                                  notice: 'Another appointment exists during that time'
+                    }
         format.json { render json: @appointment.errors, status: :unprocessable_entity }
       end
     end
