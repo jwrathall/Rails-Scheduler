@@ -17,11 +17,12 @@ class AppointmentsController < ApplicationController
   # GET /appointments/new
   # GET /appointments/new.json
   def new
-    @appointment = Appointment.new
-    @user = User.find(params[:user_id])
-    @start = Time.parse(params[:start_time])
-    @date = params[:date]
-
+    @appointment = Appointment.new(
+        :user_id => params[:user_id],
+        :start_time => Time.parse(params[:start_time]),
+        :end_time => Time.parse(params[:start_time])+1.hour,
+        :date => params[:date]
+    )
     respond_to do |format|
       format.html {render action: 'new'}
       format.json { render json: @appointment }
@@ -31,6 +32,9 @@ class AppointmentsController < ApplicationController
   # GET /appointments/1/edit
   def edit
     @appointment = Appointment.find(params[:id])
+
+    #TODO need some love on the redirect, too tired right now
+
   end
 
   # POST /appointments

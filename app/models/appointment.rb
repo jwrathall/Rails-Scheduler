@@ -8,9 +8,14 @@ class Appointment < ActiveRecord::Base
 
   scope :today, lambda{|date| where('date = ?', date).order(:start_time)}
 
+  scope :user_name, lambda { |id|
+    joins(:user).where('users.id = ?', id)
+  }
+
   def duration
     ((self.end_time - self.start_time) /60).round
   end
+
   def cell_width
     case self.duration
       when 60
@@ -23,12 +28,18 @@ class Appointment < ActiveRecord::Base
         31
     end
   end
-  def collision()
+
+  def collision
     count = Appointment.where(["user_id = ? AND start_time BETWEEN ? AND ?",self.user_id, self.start_time.strftime('%H:%M').to_s, self.end_time.strftime('%H:%M').to_s]).select("COUNT(*) AS total")
     if (count.first.total > 0)
       return true
     else
       return false
     end
+  end
+  def get_username
+    #me thinks this one smells a bit, its another hit to the db
+   @user = User.find(self.user_id)
+   @user.full_name
   end
 end

@@ -2,26 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d114627-a194-4e79-9bb7-967c09fb0404" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/appointments/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/appointments/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/appointment.rb" afterPath="$PROJECT_DIR$/app/models/appointment.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/appointments_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/appointments_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dev.scheduler.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1372779985808" ignored="false" />
-    <file path="/Dummy.txt" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1380915697661" ignored="false" />
+    <file path="/Dummy.txt" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1381260823402" ignored="false" />
     <file path="/Gemfile" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1378815896962" ignored="false" />
     <file path="/Ruby Console" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1380530706258" ignored="false" />
     <file path="/user_controller.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1372110017227" ignored="false" />
-    <file path="/routes.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1379505163774" ignored="false" />
+    <file path="/routes.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1381269133321" ignored="false" />
     <file path="/access_controller.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1378902914914" ignored="false" />
     <file path="/admin_controller.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1378843449567" ignored="false" />
     <file path="/show.html.erb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1378936484841" ignored="false" />
     <file path="/seeds.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1379074354968" ignored="false" />
     <file path="/index.html.erb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1380630758497" ignored="false" />
     <file path="/user.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1380120982261" ignored="false" />
-    <file path="/_form.html.erb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1380631017611" ignored="false" />
+    <file path="/_form.html.erb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1381267139638" ignored="false" />
     <file path="/edit.html.erb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1371501041446" ignored="false" />
     <file path="/new.html.erb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1372886675706" ignored="false" />
     <file path="/admin.html.erb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1372104494395" ignored="false" />
@@ -55,8 +57,8 @@
     <file path="/application.css.scss" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1380572848875" ignored="false" />
     <file path="/20130909115626_create_appointments.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1378728259405" ignored="false" />
     <file path="/temp.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1378730976420" ignored="false" />
-    <file path="/appointments_controller.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1380920467119" ignored="false" />
-    <file path="/appointment.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1380916860617" ignored="false" />
+    <file path="/appointments_controller.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1381269239880" ignored="false" />
+    <file path="/appointment.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1381265585487" ignored="false" />
     <file path="/20130910124925_change_user_table_column.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1378817462416" ignored="false" />
     <file path="/scaffolds.css.scss" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1378841431105" ignored="false" />
     <file path="/application_controller.rb" changelist="3d114627-a194-4e79-9bb7-967c09fb0404" time="1378902953403" ignored="false" />
@@ -104,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="54" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
+            <state line="9" column="94" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,7 +118,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/appointments/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="44" selection-start="1219" selection-end="1219" vertical-scroll-proportion="-22.5">
+            <state line="14" column="13" selection-start="461" selection-end="461" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
@@ -134,28 +136,7 @@
       <file leaf-file-name="appointments_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/appointments_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="3" selection-start="2732" selection-end="2732" vertical-scroll-proportion="1.2511848">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appointment_presenter.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/appointment_presenter.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="99" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scheduler_development.appointments" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/c9f77e3b/a67af824-7dc6-436e-b906-6294fed5903c/scheduler_development..appointments">
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="35" column="61" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.6703911">
               <folding />
             </state>
           </provider>
@@ -164,7 +145,7 @@
       <file leaf-file-name="appointment.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/appointment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="53" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
+            <state line="28" column="48" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -203,13 +184,13 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
         <option value="$PROJECT_DIR$/config/config.yml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/appointments.css.scss" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/views/appointments/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/appointments/_form.html.erb" />
         <option value="db-console:/c9f77e3b/a67af824-7dc6-436e-b906-6294fed5903c/" />
-        <option value="dbtable:/c9f77e3b/a67af824-7dc6-436e-b906-6294fed5903c/scheduler_development..appointments" />
         <option value="$PROJECT_DIR$/app/models/appointment.rb" />
+        <option value="dbtable:/c9f77e3b/a67af824-7dc6-436e-b906-6294fed5903c/scheduler_development..appointments" />
+        <option value="$PROJECT_DIR$/app/views/appointments/_form.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/appointments_controller.rb" />
       </list>
     </option>
@@ -291,7 +272,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -611,6 +591,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1030,7 +1011,7 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="1">
+  <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -1055,12 +1036,12 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32467532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32730561" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32730561" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23980099" sideWeight="0.6726944" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24925373" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17512438" sideWeight="0.6726944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18308458" sideWeight="0.6726944" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39873418" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10367617" sideWeight="0.42544317" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18308458" sideWeight="0.38698012" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20524412" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32459313" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283859" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1140,23 +1121,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/business_hours.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="65" selection-start="39" selection-end="39" vertical-scroll-proportion="0.013914657" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="110" selection-start="665" selection-end="666" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/access/_calendar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="82" selection-start="944" selection-end="944" vertical-scroll-proportion="0.3200776" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="87" selection-start="23" selection-end="23" vertical-scroll-proportion="0.014218009" />
@@ -1165,13 +1129,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="59" selection-start="983" selection-end="983" vertical-scroll-proportion="0.7867299" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/appointments.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="46" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
@@ -1191,9 +1148,42 @@
         <state line="4" column="119" selection-start="119" selection-end="119" vertical-scroll-proportion="0.058479533" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/appointments/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/calendar.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/appointment_presenter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="99" selection-start="224" selection-end="224" vertical-scroll-proportion="0.12796208">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/appointments/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="461" selection-end="461" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="265" selection-end="265" vertical-scroll-proportion="0.17061612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/appointment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="53" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
+        <state line="28" column="48" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1203,20 +1193,6 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/appointment_presenter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="99" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/appointments/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -1224,21 +1200,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="54" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
+        <state line="39" column="54" selection-start="829" selection-end="829" vertical-scroll-proportion="0.5426716">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/appointments/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/appointments.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="44" selection-start="1219" selection-end="1219" vertical-scroll-proportion="-22.5">
+        <state line="78" column="46" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="94" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/appointments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="3" selection-start="2732" selection-end="2732" vertical-scroll-proportion="1.2511848">
+        <state line="35" column="61" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.6703911">
           <folding />
         </state>
       </provider>

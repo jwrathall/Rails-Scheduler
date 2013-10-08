@@ -10,10 +10,12 @@
       </ul>
     </div>
   <% end %>
-
+    <% if flash[:notice] %>
+        <p id="notice"><%= flash[:notice] %></p>
+    <% end %>
   <div class="field">
     <%= f.label 'Provider' %><br />
-    <%= f.text_field :user, :value => @user.full_name, :disabled => 'disabled',:class => 'topcoat-text-input'%>
+    <%= f.text_field :user, :value => @appointment.get_username, :disabled => 'disabled',:class => 'topcoat-text-input'%>
   </div>
   <div class="field">
     <%= f.label :date %><br />
@@ -21,15 +23,15 @@
   </div>
   <div class="field">
     <%= f.label :start_time %><br />
-    <%= f.time_select :start_time, :value =>{:hour => @start.strftime('%H'), :minute => @start.strftime('%M')}, :default => @start,:minute_step => 15  %>
+    <%= f.time_select :start_time, :value =>{:hour => @appointment.start_time.strftime('%H'), :minute =>@appointment.start_time.strftime('%M')}, :default => @appointment.start_time.strftime('%H'),:minute_step => 15  %>
 
   </div>
   <div class="field">
     <%= f.label :end_time %><br />
-    <%= f.time_select :end_time, :value => {:hour => (@start+1.hour).strftime('%H'), :minute => @start.strftime('%M')}, :default => @start+1.hour ,:minute_step => 15%>
+    <%= f.time_select :end_time, :value => {:hour => @appointment.end_time.strftime('%H'), :minute => @appointment.end_time.strftime('%M')}, :default => @appointment.end_time,:minute_step => 15%>
   </div>
   <div class="actions">
-    <%= f.hidden_field :user_id, :value => @user.id%>
+    <%= f.hidden_field :user_id, :value => @appointment.user_id%>
     <%= f.submit %>
   </div>
 
