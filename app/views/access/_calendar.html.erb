@@ -11,7 +11,7 @@
   <ul class="display_week">
     <% (@calendar.start_of_previous_week..@calendar.start_of_week-1).each do |date| %>
         <li>
-          <%= link_to date.strftime('%e'), appointment_path(:date => date)%>
+          <%= link_to date.strftime('%e'), appointments_path(:date => date)%>
         </li>
     <%end %>
   </ul>
@@ -21,7 +21,7 @@
   <ul class="display_week">
   <% (@calendar.start_of_week..@calendar.end_of_week).each do |date| %>
         <li class="<%= 'current_day' if date.today? %>">
-          <%= link_to date.strftime('%e'), appointment_path(:date => date)%>
+          <%= link_to date.strftime('%e'), appointments_path(:date => date)%>
         </li>
   <%end %>
   </ul>
@@ -32,9 +32,17 @@
   <ul class="display_week">
     <% (@calendar.start_of_next_week..@calendar.end_of_next_week).each do |date| %>
         <li>
-          <%= link_to date.strftime('%e'), appointment_path(:date => date)%>
+          <%= link_to date.strftime('%e'), appointments_path(:date => date)%>
         </li>
     <%end %>
   </ul>
 </div>
+<%
+i =1
+while i <= @presenter.calendar.days_in_month  do %>
+  <div><%= i%> </div>
+<%i +=1
+end
+%>
 
+<div><%=@presenter.calendar.days_in_month%></div>

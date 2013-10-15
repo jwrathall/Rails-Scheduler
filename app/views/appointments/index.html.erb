@@ -36,7 +36,10 @@
                     <%user.appointments.today(@presenter.today).each do |appointment|%>
                         <%if Time.at(myTime).strftime('%H:%M').to_str == appointment.start_time.strftime('%H:%M').to_str%>
                             <li style="position:absolute; left:<%=left_distance.to_s%>px; width:<%=appointment.cell_width%>px;">
-                               <div class="event-booked"><%= link_to 'edit', edit_appointment_path(appointment)%></div>
+                               <div class="event-booked">
+                                 <%= link_to 'edit', edit_appointment_path(appointment)%>
+                                 <%= link_to('Delete', appointment, :method => :delete, :class => 'action',:confirm => 'Are you sure? This action cannot be undone.') %>
+                               </div>
                             </li>
                             <%left_distance += appointment.cell_width.to_i %>
                             <%do_next = false%>

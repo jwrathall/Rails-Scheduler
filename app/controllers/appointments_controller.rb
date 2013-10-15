@@ -12,6 +12,7 @@ class AppointmentsController < ApplicationController
 
   def show
     @appointment = Appointment.find_all_by_date(params[:date])
+    redirect_to action: 'index'
   end
 
   # GET /appointments/new
@@ -32,9 +33,6 @@ class AppointmentsController < ApplicationController
   # GET /appointments/1/edit
   def edit
     @appointment = Appointment.find(params[:id])
-
-    #TODO need some love on the redirect, too tired right now
-
   end
 
   # POST /appointments

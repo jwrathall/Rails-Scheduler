@@ -25,6 +25,10 @@ end
   def calendar_menu
     @calendar = Calendar.new(:_day => Date.today.day, :_month => Date.today.month, :_year => Date.today.year)
     @calendar._today = Date.new(Date.today.year,Date.today.month,Date.today.day)
+    @presenter = CalendarPresenter.new({
+                                           :users => User.all,
+                                           :calendar_machine => Calendar.new(:_day => Date.today.day, :_month => Date.today.month, :_year => Date.today.year)
+                                       })
   end
 
   def new_month
@@ -32,4 +36,5 @@ end
     @calendar._today = Date.new(params[:year].to_i,params[:month].to_i,Date.today.day)
     #render (:new_month)
   end
+
 end
