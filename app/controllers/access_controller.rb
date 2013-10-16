@@ -23,11 +23,13 @@ end
   end
 
   def calendar_menu
+    var = Date.parse('2013-09-18')
     @calendar = Calendar.new(:_day => Date.today.day, :_month => Date.today.month, :_year => Date.today.year)
     @calendar._today = Date.new(Date.today.year,Date.today.month,Date.today.day)
     @presenter = CalendarPresenter.new({
                                            :users => User.all,
-                                           :calendar_machine => Calendar.new(:_day => Date.today.day, :_month => Date.today.month, :_year => Date.today.year)
+                                           #:calendar_machine => Calendar.new(:_day => Date.today.day, :_month => Date.today.month, :_year => Date.today.year)
+                                           :calendar_machine => Calendar.new(:_day => var.day, :_month => var.month, :_year => var.year )
                                        })
   end
 

@@ -40,9 +40,19 @@
 <%
 i =1
 while i <= @presenter.calendar.days_in_month  do %>
-  <div><%= i%> </div>
+  <!--<div style="width:50px;height:150px; border-right:solid 1px green;float:left;"><%= i%></div>-->
 <%i +=1
 end
 %>
 
-<div><%=@presenter.calendar.days_in_month%></div>
+<%@presenter.calendar_hash.each do |key, value|
+    id = value.map{ |a| a.id }%>
+    <div style="width:50px;height:150px; border-right:solid 1px green;float:left;"><%= key%>
+      <%if hash[key].size > 0%>
+        <div><%=id%></div>
+      <%end%>
+    </div>
+<%end%>
+
+check for empty has key
+http://stackoverflow.com/questions/3658150/search-ruby-hash-for-empty-value/3658246#3658246
