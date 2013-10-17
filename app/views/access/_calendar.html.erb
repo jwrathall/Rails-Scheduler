@@ -46,13 +46,43 @@ end
 %>
 
 <%@presenter.calendar_hash.each do |key, value|
-    id = value.map{ |a| a.id }%>
+    appointments = value.map{ |a| a }%>
     <div style="width:50px;height:150px; border-right:solid 1px green;float:left;"><%= key%>
-      <%if hash[key].size > 0%>
-        <div><%=id%></div>
+      <%if value.any?%>
+          <div style="width:100%;">
+            <%row_flag = 1%>
+            <%appointments.each_with_index do |appointment, index|%>
+                <%if row_flag == 1%>
+                 <div style="width:100%;height:29px;margin:0 0 4px 0;clear:both;">
+                <%end%>
+                  <div style="width:12px; float:left; border:solid 1px red;margin:0 4px 0 0;">
+                    x
+                  </div>
+                  <%if row_flag == 2
+                    row_flag = 0
+                  %>
+                    </div>
+                  <%end%>
+                  <%row_flag +=1%>
+            <%end%>
+            <%if row_flag == 2%>
+            </div>
+            <%end%>
+          </div>
+      <%else%>
+          <div></div>
       <%end%>
     </div>
 <%end%>
 
-check for empty has key
-http://stackoverflow.com/questions/3658150/search-ruby-hash-for-empty-value/3658246#3658246
+<%@presenter.calendar_hash.each do |key, value|
+  appointments = value.map{ |a| a }%>
+    <div style="width:50px;height:150px; border-right:solid 1px green;float:left;"><%= key%>
+      <%if value.any?%>
+         <%=appointments%>
+      <%else%>
+          <div></div>
+      <%end%>
+      </div>
+<%end%>
+

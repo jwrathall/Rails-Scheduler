@@ -8,14 +8,14 @@ class CalendarPresenter
 
   def calendar_hash
     my_hash = Hash.new { |hash, key| hash[key] = Array.new }
-    appointments = Appointment.where("date between ? and ?",Date.parse("2013-09-01"),Date.parse("2013-09-30")).order("user_id ASC")
+    appointments = Appointment.where("date between ? and ?",Date.parse("2013-09-01"),Date.parse("2013-09-30")).order("date, user_id ASC")
     i =1
     while i <= @calendar.days_in_month
       appointments.each do |appointment|
         if i == appointment.date.strftime("%d").to_i
           my_hash["#{i}"] << appointment
         else
-          my_hash["#{i}"] = []
+         # my_hash["#{i}"]  Array.new
         end
       end
       i += 1
