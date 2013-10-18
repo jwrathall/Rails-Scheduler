@@ -15,7 +15,7 @@ class CalendarPresenter
         if i == appointment.date.strftime("%d").to_i
           my_hash["#{i}"] << appointment
         else
-         # my_hash["#{i}"]  Array.new
+        # my_hash["#{i}"] << Array.new
         end
       end
       i += 1
@@ -45,3 +45,34 @@ end
 #Retrieve the employees for the given collection of shops in your controller:
 #
 #    @employees = Employee.all_by_shop_id(@shops, :order => :name)
+
+#<%@presenter.calendar_hash.each do |key, value|
+#    appointments = value.map{ |a| a }%>
+#    <div style="width:50px;height:150px; border-right:solid 1px green;float:left;"><%= key%>
+#      <%if value.any?%>
+#          <div style="width:100%;">
+#            <%row_flag = 1%>
+#            <%appointments.each_with_index do |appointment, index|%>
+#                <%if row_flag == 1%>
+#                 <div style="width:100%;height:29px;margin:0 0 4px 0;clear:both;">
+#                <%end%>
+#                  <div style="width:12px; float:left; border:solid 1px red;margin:0 4px 0 0;">
+#                    x
+#                  </div>
+#                  <%if row_flag == 2
+#                    row_flag = 0
+#                  %>
+#                    </div>
+#                  <%end%>
+#                  <%row_flag +=1%>
+#            <%end%>
+#            <%if row_flag == 2%>
+#            </div>
+#            <%end%>
+#          </div>
+#      <%else%>
+#          <div></div>
+#      <%end%>
+#    </div>
+#<%end%>
+# <br/>

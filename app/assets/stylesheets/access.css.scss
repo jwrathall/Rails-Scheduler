@@ -1,7 +1,10 @@
 // Place all the styles related to the access controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+$box-height:52px;
+$box-width:52px;
+$webkit-shadow:1px 1px 2px 1px rgba(23, 23, 23, .3);
+$box-shadow: 1px 1px 2px 1px rgba(23, 23, 23, .3);
 .calendar_menu_months li, .display_week li{
   display:inline;
   margin:0px auto;
@@ -17,5 +20,54 @@
     font-size: 1.2em;
     width:20px;
     margin:0px auto;
+  }
+}
+.box{
+  display: inline-block;
+  width:$box-width;
+  height:$box-height;
+  -webkit-box-shadow:$webkit-shadow;
+  box-shadow:$box-shadow
+}
+.calendar{
+  position:relative;
+  overflow-x:scroll;
+  background-color:#c9cccc;
+  max-width:1200px;
+  height:400px;
+  .calendar-container{
+    width:6000px;
+    height:400px;
+    .calendar-day{
+      width:120px;
+      height:400px;
+      border-right:solid 2px #f2f3f3;
+      float:left;
+      .calendar-date{
+
+        float:right;
+        margin:4px 6px 0 0;
+        outline: 1px solid #d3d7d7;
+
+      }
+      .calendar-date span{
+        display: block;
+        color:#f2f3f3;
+        font-weight: 400 !important;
+        font-size: 22px!important;
+        text-align: center;
+        margin:12px 0 0 0;
+      }
+      .calendar-day-event{
+        background-color: #288edf;
+        outline: 1px solid   #6eade0;
+        /*border-bottom: solid 1px #5fa6de;
+        border-right: solid 1px #5fa6de;
+        border-top:solid 1px #0380e8;
+        border-left:solid 1px #0380e8;   */
+        margin:4px;
+
+      }
+    }
   }
 }
