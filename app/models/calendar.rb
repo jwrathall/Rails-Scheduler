@@ -29,7 +29,7 @@ class Calendar < ActiveRecord::Base
     (_today + 7).end_of_week(:sunday)
   end
   def today
-    _today
+   @today = Date.new(_year,_month,_day)
   end
   def get_users
     User.all
